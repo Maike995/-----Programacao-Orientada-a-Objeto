@@ -9,8 +9,8 @@ Um método que retorne a densidade populacional do país;
 
 package dados;
 
-public class Pesquisa
-{
+public class Main{
+  
 	public static void main(String[] args) {
 	
 	Pais brasil = new Pais("BRA","Brasil",1000,1000);

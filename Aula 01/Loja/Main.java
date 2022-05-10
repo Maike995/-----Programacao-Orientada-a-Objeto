@@ -1,10 +1,10 @@
+
+
 package loja;
 
-    public class Concecionaria{
+    public class Main{
 	
-
-
-            public static void main(String[] args) {
+    public static void main(String[] args) {
 	    
 	Carro fusca = new Carro("Fusca","Antigo",1990,1.0,2);
 	fusca.informarDados(); 

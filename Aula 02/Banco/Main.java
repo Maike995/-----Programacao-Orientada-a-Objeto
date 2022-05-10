@@ -12,9 +12,8 @@ Tente sacar 100,00 na conta 2; Tente sacar 900,00 na conta 1; Tente depositar 1.
 package banco;
 
 
-public class Cliente
-        
-{
+public class Main{
+  
 	public static void main(String[] args) {
 	    
     Conta contaCorrente = new Conta("Conta Corrente");

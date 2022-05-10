@@ -10,8 +10,8 @@ Crie 2 veículos testando a classe criada.
 package concecionaria;
 
 
-public class Loja
-{
+public class Main{
+  
 	public static void main(String[] args) {
 	
 	Veiculo ronda = new Veiculo("Ronda","Suzuki");

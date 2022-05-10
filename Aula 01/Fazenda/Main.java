@@ -1,6 +1,6 @@
 package fazenda;
 
-public class Curral {
+public class Main {
 
     public static void main(String[] args) {
         
