@@ -1,4 +1,4 @@
-package loja;
+package prova;
 
 public class Produto {
 
@@ -9,44 +9,56 @@ public class Produto {
 	public double valorDeCusto;
 	public double valorDeVenda;
 	public double valorPromocional;
-  public double promocaoAplicada;
 	public static int contador;
+	public double promocaoAplicada;
 	public static double valorEstoqueTotal;
 	
-	      public Produto(String descricao, double pValorCusto) {
+	public Produto(String descricao, double pValorCusto) {
 		this.descricao = descricao;
 		valorDeCusto = pValorCusto;
 		contador++;
 		this.codigo = contador;
 		estoque = 0;
-		this.valorDeVenda=valorDeCusto+(valorDeCusto*0.2);
-		this.valorDeVenda=this.valorDeVenda-(this.valorDeVenda*this.valorPromocional);
+		this.valorDeVenda=valorDeCusto*1.2;
+                
 		}
 
         public void atualizarValorPromo(double valorPromocional) {
-		this.valorPromocional=valorPromocional;
+            if(valorPromocional>100){
+                System.out.println();
+                System.out.println("Promoção Invalida");
+                System.out.println();
+            }else if(valorPromocional<0){
+                System.out.println();
+                System.out.println("Promoção Invalida");
+                System.out.println();
+            }else{
+                this.valorPromocional=valorPromocional;
 		this.promocaoAplicada=this.valorPromocional*100;
+                this.valorDeVenda=this.valorDeVenda-(this.valorDeVenda*(this.valorPromocional/100));
+            }
+		
 		
 	}
 
-	      public void atualizarEstoque(String movimento, int atualiza) {
+	public void atualizarEstoque(String movimento, int atualiza) {
             valorEstoqueTotal=valorEstoqueTotal-(valorDeCusto*estoque);
             
 		if(movimento.equalsIgnoreCase("E")) {
 			estoque=estoque+atualiza;
 		}
-		if(movimento.equalsIgnoreCase("S"))  {
+		if(movimento.equalsIgnoreCase("S") && atualiza<=estoque)  {
 			estoque=estoque-atualiza;
 		}
 		
             valorEstoqueTotal=valorEstoqueTotal+(valorDeCusto*estoque);
-	  }
+	}
         
         public double getValorDeCusto() {
 		return valorDeCusto;
 	}
 
-		    public void setValorDeCusto(double valorDeCusto) {
+	public void setValorDeCusto(double valorDeCusto) {
 		this.valorDeCusto = valorDeCusto;
 		this.valorDeVenda=this.valorDeCusto+(this.valorDeCusto*0.2);
 	}
@@ -55,66 +67,69 @@ public class Produto {
 		return valorPromocional;
 	}
 
-		    public void setValorPromocional(double valorPromocional) {
+	public void setValorPromocional(double valorPromocional) {
 		this.valorPromocional = valorPromocional;
 	}
         
-		    public int getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
 
-		    public void setCodigo(int codigo) {
+	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
 
-		    public String getDescricao() {
+	public String getDescricao() {
 		return descricao;
 	}
 
-		    public void setDescricao(String descricao) {
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
 
-		    public int getEstoque() {
+	public int getEstoque() {
 		return estoque;
 	}
 
-		    public void setEstoque(int estoque) {
+	public void setEstoque(int estoque) {
 		this.estoque = estoque;
 	}
 
-		    public double getValorDeVenda() {
+	public double getValorDeVenda() {
 		return valorDeVenda;
 	}
 
-		    public void setValorDeVenda(double valorDeVenda) {
+	public void setValorDeVenda(double valorDeVenda) {
 		this.valorDeVenda = valorDeVenda;
 	}
 
-		    public double getValorPromoc() {
+	public double getValorPromoc() {
 		return valorPromocional;
 	}
         
 
-		    public void setValorPromoc(double valorPromocional) {
+	public void setValorPromoc(double valorPromocional) {
 		this.valorPromocional = valorPromocional;
 	}
 
-		    public static int getContador() {
+	public static int getContador() {
 		return contador;
 	}
 
-		    public static void setContador(int contador) {
+	public static void setContador(int contador) {
 		Produto.contador = contador;
 	}
 	
-		    public double getPromocaoAplicada() {
+	public double getPromocaoAplicada() {
 		return promocaoAplicada;
 	}
 
-	    	public void setPromocaoAplicada(double promocaoAplicada) {
+	public void setPromocaoAplicada(double promocaoAplicada) {
 		this.promocaoAplicada = promocaoAplicada;
 	}
 
+	
+	
+	
 	
 }
