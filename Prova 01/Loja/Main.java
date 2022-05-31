@@ -14,12 +14,12 @@ public class Main {
 	Produto p4 = new Produto("Creme Dental Umbu 120 G", 3.59);
 		
 	p1.atualizarEstoque("e", 350);
-        p1.atualizarEstoque("s", 100);
+  p1.atualizarEstoque("s", 100);
 	p1.atualizarEstoque("e", 550);
 	p1.atualizarEstoque("s", 200);
 
 	p2.atualizarEstoque("e", 1100);
-        p2.atualizarEstoque("s", 200);
+  p2.atualizarEstoque("s", 200);
 	p2.atualizarEstoque("e", 800);
 	p2.atualizarEstoque("s", 900);
 
