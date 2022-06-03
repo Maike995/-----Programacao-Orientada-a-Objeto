@@ -6,7 +6,7 @@ public class Mamifero extends Animal{
 
   private String alimento;
 
-  public Mamifero(String nome, float comprimento, int nr_patas, String cor, String ambiente, double velocidade, String alimento){
+  public Mamifero(String nome, double comprimento, int nr_patas, String cor, String ambiente, double velocidade, String alimento){
 
       this.nome = nome;
       this.comprimento = comprimento;

@@ -6,7 +6,7 @@ public class Peixe extends Animal{
 
   private String caracteristicas;
 
-  public Peixe( String nome, float comprimento, int nr_patas, String cor, String ambiente, double velocidade, String caracteristicas){
+  public Peixe( String nome, double comprimento, int nr_patas, String cor, String ambiente, double velocidade, String caracteristicas){
       
       
       this.nome = nome;

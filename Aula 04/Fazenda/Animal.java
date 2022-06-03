@@ -35,7 +35,7 @@ public abstract class Animal {
   public void setNome(String nome){
     this.nome = nome;
   }
-  public void setComprimento(float comprimento){
+  public void setComprimento(double comprimento){
     this.comprimento = comprimento;
   }
   public void setNr_patas(int nr_patas){
