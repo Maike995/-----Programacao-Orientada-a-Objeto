@@ -2,7 +2,7 @@
 
 package sistema;
 
-public abstract class Cliente extends Usuario {
+public class Cliente extends Usuario {
     
     
     protected String endereco;
@@ -36,6 +36,6 @@ public abstract class Cliente extends Usuario {
     public void dados(){
     System.out.println("Dados dos cliente| Nome: "+nome+" |Senha: "+senha+" | Endereço: "+endereco+" | Data de Nascimento: "+dataDeNascimento);
     }
-}
+
   
 }
