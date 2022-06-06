@@ -15,4 +15,8 @@ public class Funcionario extends Usuario{
         System.out.println("Relatorio de vendas| Quantidade De Venda: "+quantidadeDeVenda+" | valor unitário: "+valorUnitario+" | listar venda: "+listarVenda);
     }
   
+  public void dados(){
+    System.out.println("Dados dos cliente| Nome: "+nome+" |Senha: "+senha);
+    }
+  
 }
