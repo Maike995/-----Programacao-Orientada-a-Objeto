@@ -6,9 +6,9 @@ public class Cliente extends Usuario {
     
     
     protected String endereco;
-    protected int dataDeNascimento;
+    protected String dataDeNascimento;
     
-    public Cliente(String nome, int senha, String endereco,int dataDeNascimento){
+    public Cliente(String nome, String senha, String endereco,String dataDeNascimento){
         super(nome, senha);
 
         this.endereco=endereco;
@@ -20,7 +20,7 @@ public class Cliente extends Usuario {
     public String getEndereco(){
         return endereco;
     }
-    public int getDataDeNascimento(){
+    public String getDataDeNascimento(){
         return dataDeNascimento;
     }
 
@@ -28,7 +28,7 @@ public class Cliente extends Usuario {
     public void setEndereco(String endereco){
         this.endereco=endereco;
     }
-    public void setDataDeNascimento(int dataDeNascimento){
+    public void setDataDeNascimento(String dataDeNascimento){
         this.dataDeNascimento=dataDeNascimento;
     }
     
