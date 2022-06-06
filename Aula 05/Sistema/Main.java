@@ -15,12 +15,12 @@ public class Main {
     public static void main(String[] args) {
         
         
-        Funcionario f1 = new Funcionario("Maike",5);
+        Funcionario f1 = new Funcionario("Maike","5h");
         f1.calcularVenda(2,0.5,50);
-        Funcionario f2 = new Funcionario("Ricardo",6);
+        Funcionario f2 = new Funcionario("Ricardo","f6");
         f1.calcularVenda(8,5.5,850);
         
-        Gerente g1 = new Gerente("Carlos",8);
+        Gerente g1 = new Gerente("Carlos","g8");
         g1.calcularVenda(42,6.5,540);
         g1.fechar();
         
