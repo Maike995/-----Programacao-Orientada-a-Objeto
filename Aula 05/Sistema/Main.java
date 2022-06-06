@@ -24,6 +24,13 @@ public class Main {
         g1.calcularVenda(42,6.5,540);
         g1.fechar();
         
+        Cliente c1 = new Cliente("Marlon","54f8","Casa","18/08/2021");
+      
+        f1.dados();
+        f2.dados();
+        g1.dados();
+        c1.dados();
+     
     }
     
 }
