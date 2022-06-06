@@ -6,7 +6,12 @@ public abstract class  Usuario {
     
     protected String nome;
     protected int senha;
-    
+
+     public Usuario(String nome, int senha){
+      this.nome=nome;
+      this.senha=senha;
+      }
+  
     public String getNome(){
         return nome;
     }

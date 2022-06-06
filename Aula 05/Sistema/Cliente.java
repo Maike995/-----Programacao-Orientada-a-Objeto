@@ -9,9 +9,8 @@ public class Cliente extends Usuario {
     protected int dataDeNascimento;
     
     public Cliente(String nome, int senha, String endereco,int dataDeNascimento){
-        
-        this.nome=nome;
-        this.senha=senha;
+        super(nome, senha);
+
         this.endereco=endereco;
         this.dataDeNascimento=dataDeNascimento;
     }

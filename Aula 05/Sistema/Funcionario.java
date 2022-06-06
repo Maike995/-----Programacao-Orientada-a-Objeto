@@ -6,8 +6,8 @@ package sistema;
 public class Funcionario extends Usuario{
   
   public Funcionario(String nome, int senha){
-  this.nome=nome;
-  this.senha=senha;
+  super(nome, senha);
+
   }
   
 
