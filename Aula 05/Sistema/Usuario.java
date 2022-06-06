@@ -5,9 +5,9 @@ public abstract class  Usuario {
     
     
     protected String nome;
-    protected int senha;
+    protected String senha;
 
-     public Usuario(String nome, int senha){
+     public Usuario(String nome, String senha){
       this.nome=nome;
       this.senha=senha;
       }
@@ -15,14 +15,14 @@ public abstract class  Usuario {
     public String getNome(){
         return nome;
     }
-    public int getSenha(){
+    public String getSenha(){
         return senha;
     }
     
     public void setNome(String nome){
         this.nome=nome;
     }
-    public void setSenha(int senha){
+    public void setSenha(String senha){
         this.senha=senha;
     }
     
