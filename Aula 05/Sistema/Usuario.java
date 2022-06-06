@@ -1,7 +1,7 @@
 
 package sistema;
 
-public abstract class  Empregado {
+public abstract class  Usuario {
     
     
     protected String nome;
